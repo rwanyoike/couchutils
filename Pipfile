@@ -11,9 +11,10 @@ name = "pypi"
 
 [dev-packages]
 
+"flake8" = "*"
+"flake8-docstrings" = "*"
+"flake8-isort" = "*"
+"pep8-naming" = "*"
+isort = "*"
 pytest = "*"
 pytest-cov = "*"
-"flake8-docstrings" = "*"
-"pep8-naming" = "*"
-"flake8-isort" = "*"
-isort = "*"

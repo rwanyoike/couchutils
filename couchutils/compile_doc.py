@@ -1,3 +1,5 @@
+"""Functions to build CouchDB documents from a directory."""
+
 import json
 import os
 from pathlib import Path

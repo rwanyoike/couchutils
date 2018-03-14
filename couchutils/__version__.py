@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*- # noqa: D100
-
-__title__ = 'couchutils'
+__title__ = 'couchutils'  # noqa: D100
 __description__ = 'A collection of CouchDB utils.'
 __url__ = 'https://github.com/rwanyoike/couchutils'
 __version__ = '0.1.0'
