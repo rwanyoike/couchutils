@@ -23,7 +23,7 @@ setup(
     url=about['__url__'],
     packages=['couchutils'],
     include_package_data=True,
-    install_requires=[],
+    install_requires=['pathlib2'],
     license=about['__license__'],
     zip_safe=False,
     classifiers=[
@@ -31,6 +31,8 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
     ],
