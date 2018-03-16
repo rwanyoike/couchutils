@@ -2,10 +2,11 @@
 
 import json
 import os
+import sys
 
-try:
+if sys.version_info[0] > 2:
     from pathlib import Path
-except ImportError:
+else:
     from pathlib2 import Path
 
 
