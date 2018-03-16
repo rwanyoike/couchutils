@@ -7,7 +7,7 @@ name = "pypi"
 
 [packages]
 
-"pathlib2" = "*"
+"pathlib2" = {version = "*", python_version = "== '2.7'"}
 
 
 [dev-packages]
