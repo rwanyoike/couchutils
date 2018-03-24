@@ -1,8 +1,9 @@
 """Functions to build CouchDB documents from a directory."""
 
-import json
 import os
 import sys
+
+import simplejson as json
 
 if sys.version_info[0] > 2:
     from pathlib import Path

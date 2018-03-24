@@ -23,7 +23,7 @@ setup(
     url=about['__url__'],
     packages=['couchutils'],
     include_package_data=True,
-    install_requires=['pathlib2; python_version == "2.7"'],
+    install_requires=['pathlib2; python_version == "2.7"', 'simplejson'],
     license=about['__license__'],
     zip_safe=False,
     classifiers=[
