@@ -43,13 +43,17 @@ def parse_directory(path):
     :param pathlib.Path path: The directory.
     :rtype: dict
     """
+    top = str(path)
     doc = {}
 
-    for root, dirs, files in os.walk(str(path), topdown=False):
+    for (root, dirs, files) in os.walk(top, topdown=False):
         root_path = Path(root)
         obj = {}
         for file in files:
-            file_path = root_path / file
+            file_path = root_path.joinpath(file)
+            if file_path.name.startswith('.'):
+                # Ignore hidden files (.DS_Store etc)
+                continue
             content = _get_file_content(file_path)
             obj[file_path.stem] = content
         rel_path = root_path.relative_to(path)
