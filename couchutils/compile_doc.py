@@ -77,7 +77,7 @@ def parse_file(path):
     return {}
 
 
-def compile_doc(target):
+def compile_docs(target):
     """Build CouchDB documents from a directory.
 
     :param target: The directory.

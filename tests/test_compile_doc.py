@@ -9,7 +9,7 @@ EXPECTED = os.path.join(FIXTURES, 'expected')
 
 
 def test_compile_doc():
-    result = compile_doc.compile_doc(TEST_DIR)
+    result = compile_doc.compile_docs(TEST_DIR)
     assert len(result) == 4
 
     # Test result against expected documents

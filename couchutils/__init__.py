@@ -5,7 +5,11 @@
 
 """A collection of CouchDB utils.
 
-- compile_doc
+Example::
+
+    >>> from couchutils import compile_docs
+    >>> compile_doc.compile_docs('<DOC_DIR>')
+    {...}
 """
 
 from couchutils.__version__ import (  # noqa: F401
