@@ -3,12 +3,12 @@ import os
 
 from couchutils import compile_doc
 
-FIXTURES = os.path.join(os.path.dirname(__file__), 'fixtures', 'compile_doc')
+FIXTURES = os.path.join(os.path.dirname(__file__), 'fixtures', 'compile_docs')
 TEST_DIR = os.path.join(FIXTURES, 'test_dir')
 EXPECTED = os.path.join(FIXTURES, 'expected')
 
 
-def test_compile_doc():
+def test_compile_docs():
     result = compile_doc.compile_docs(TEST_DIR)
     assert len(result) == 4
 
