@@ -2,6 +2,7 @@
 
 [![Travis (.org)](https://img.shields.io/travis/rwanyoike/couchutils.svg)](https://travis-ci.org/rwanyoike/couchutils)
 [![Codecov](https://img.shields.io/codecov/c/gh/rwanyoike/couchutils.svg)](https://codecov.io/gh/rwanyoike/couchutils)
+[![PyPI](https://img.shields.io/pypi/v/couchutils.svg)](https://pypi.python.org/pypi/couchutils)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/couchutils.svg)](https://pypi.python.org/pypi/couchutils)
 [![PyPI - License](https://img.shields.io/pypi/l/couchutils.svg)](https://pypi.python.org/pypi/couchutils)
 
