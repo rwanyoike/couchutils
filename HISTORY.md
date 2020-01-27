@@ -2,7 +2,7 @@
 
 ## 0.4.0 (2020-01-27)
 
-- Rerelease for PyPy
+- Rerelease for PyPy.
 
 ## 0.3.0 (2020-01-27)
 
