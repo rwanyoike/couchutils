@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "couchutils"
-version = "0.3.0"
+version = "0.4.0"
 description = "A collection of CouchDB utils."
-authors = ["Raymond Wanyoike <raymond.wanyoike@gmail.com>"]
 license = "MIT"
+authors = ["Raymond Wanyoike <raymond.wanyoike@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/rwanyoike/couchutils"
+include = ["HISTORY.md"]
 
 [tool.poetry.dependencies]
 python = "^3.6"

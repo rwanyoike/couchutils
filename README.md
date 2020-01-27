@@ -39,27 +39,29 @@ To use couchutils in a project:
 {...}
 ```
 
-E.g. If passed a directory tree with `basic/` and `minimal/` child directories:
+E.g. If passed a directory tree with:
 
 ```
 .
-├── basic
+├── example1
 │   ├── _id
 │   ├── language
 │   └── views
 │       └── numbers
 │           ├── map.js
 │           └── reduce
-├── minimal
+├── example2
 │   └── _id
-└── plain.txt
+└── ignored.txt
 ```
+
+The compiled output would be:
 
 ```python
 >>> compile_doc.compile_docs(".")
 {
-    "_design/minimal": {"_id": "_design/minimal"},
-    "_design/basic": {
+    "_design/example1": {"_id": "_design/minimal"},
+    "_design/example2": {
         "views": {
             "numbers": {
                 "reduce": "_count",

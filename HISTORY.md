@@ -1,5 +1,9 @@
 # Version History
 
+## 0.4.0 (2020-01-27)
+
+- Rerelease for PyPy
+
 ## 0.3.0 (2020-01-27)
 
 - Drop Python 2.7 support - Python 2.7 will not be maintained past 2020.
