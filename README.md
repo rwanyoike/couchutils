@@ -8,11 +8,17 @@
 
 > A collection of CouchDB utils.
 
-## Feature Support
+To use couchutils in a project:
 
-- Support for CouchDB 1.7.x.
+```python
+>>> from couchutils import <UTILS_METHOD>
+```
 
-couchutils officially supports **Python 3.6+**.
+[Features](#features) | [Installation](#installation) | [Usage](#usage) | [Contributing](#contributing) | [License](#license) | [Related Projects](#related-projects)
+
+## Features
+
+couchutils officially supports Python 3.6+; CouchDB 1.7+.
 
 ## Installation
 
@@ -23,55 +29,18 @@ $ pip install -U couchutils
 ✨🛋✨
 ```
 
-## Documentation
+## Usage
 
-To use couchutils in a project:
+For documentation, see [`./docs/README.md`](./docs/README.md).
 
-```python
->>> from couchutils import <UTILS_METHOD>
-```
+## Contributing
 
-### Build CouchDB Documents from a Directory
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-```python
->>> from couchutils import compile_doc
->>> compile_doc.compile_docs("<DOC_DIR>")
-{...}
-```
+## License
 
-E.g. If passed a directory tree with:
+This project is licensed under the [MIT License](./LICENSE).
 
-```
-.
-├── example1
-│   ├── _id
-│   ├── language
-│   └── views
-│       └── numbers
-│           ├── map.js
-│           └── reduce
-├── example2
-│   └── _id
-└── ignored.txt
-```
+## Related Projects
 
-The compiled output would be:
-
-```python
->>> compile_doc.compile_docs(".")
-{
-    "_design/example1": {"_id": "_design/minimal"},
-    "_design/example2": {
-        "views": {
-            "numbers": {
-                "reduce": "_count",
-                "map": "function (doc) {\n  if (doc.name) {\n    emit(doc.name, null);\n  }\n}",
-            }
-        },
-        "_id": "_design/basic",
-        "language": "javascript",
-    },
-}
-```
-
-Ref: [tests/fixtures/compile_docs](tests/fixtures/compile_docs)
+- [time2relax](https://github.com/rwanyoike/time2relax) - A Python CouchDB driver.
