@@ -1,24 +1,25 @@
 # couchutils: Python CouchDB Utils
 
-[![Travis (.org)](https://img.shields.io/travis/rwanyoike/couchutils.svg)](https://travis-ci.org/rwanyoike/couchutils)
-[![Codecov](https://img.shields.io/codecov/c/gh/rwanyoike/couchutils.svg)](https://codecov.io/gh/rwanyoike/couchutils)
-[![GitHub](https://img.shields.io/github/license/rwanyoike/couchutils)](LICENSE)
-[![PyPI](https://img.shields.io/pypi/v/couchutils.svg)](https://pypi.python.org/pypi/couchutils)
-[![Code Style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/rwanyoike/couchutils-python-library/python-package.yml?branch=main)
+](https://github.com/rwanyoike/couchutils-python-library/actions/workflows/python-package.yml?query=branch%3Amain)
+[![GitHub License](https://img.shields.io/github/license/rwanyoike/couchutils-python-library)
+](LICENSE.txt)
+[![PyPI - Version](https://img.shields.io/pypi/v/couchutils)
+](https://pypi.org/project/couchutils)
 
 > A collection of CouchDB utils.
 
 To use couchutils in a project:
 
 ```python
->>> from couchutils import <UTILS_METHOD>
+>>> from couchutils import <METHOD>
 ```
 
 [Features](#features) | [Installation](#installation) | [Usage](#usage) | [Contributing](#contributing) | [License](#license) | [Related Projects](#related-projects)
 
 ## Features
 
-couchutils officially supports Python 3.6+; CouchDB 1.7+.
+couchutils officially supports Python 3.8+; CouchDB 1.7+.
 
 ## Installation
 
@@ -33,14 +34,6 @@ $ pip install -U couchutils
 
 For documentation, see [`./docs/README.md`](./docs/README.md).
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
-
 ## Related Projects
 
-- [time2relax](https://github.com/rwanyoike/time2relax) - A Python CouchDB driver.
+- [time2relax](https://github.com/rwanyoike/time2relax-python-driver) - A Python CouchDB driver.

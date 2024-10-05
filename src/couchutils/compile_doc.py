@@ -39,7 +39,7 @@ def parse_directory(path):
     """
     top = str(path)
     doc = {}
-    for (root, _, files) in os.walk(top, topdown=False):
+    for root, _, files in os.walk(top, topdown=False):
         root_path = Path(root)
         obj = {}
         for file in files:

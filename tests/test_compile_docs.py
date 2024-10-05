@@ -13,8 +13,8 @@ def test_compile_docs():
     assert len(result) == 4
 
     # Test result against expected documents
-    for (key, value) in result.items():
+    for key, value in result.items():
         _id = "{}.json".format(key.split("/")[-1])  # _design/xxx
         expected = os.path.join(EXPECTED, _id)
-        with open(expected, "r") as fp:
+        with open(expected) as fp:
             assert value == json.load(fp)
