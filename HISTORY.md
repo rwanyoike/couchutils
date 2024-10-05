@@ -1,5 +1,9 @@
 # Version History
 
+## 0.5.0 (2024-10-05)
+
+- Drop Python 3.6, 3.7 support - Python 3.7 will not be maintained past 2023.
+
 ## 0.4.0 (2020-01-27)
 
 - Rerelease for PyPy.

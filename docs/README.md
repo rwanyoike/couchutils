@@ -3,7 +3,7 @@
 To use couchutils in a project:
 
 ```python
->>> from couchutils import <UTILS_METHOD>
+>>> from couchutils import <METHOD>
 ```
 
 ## Table of Contents
